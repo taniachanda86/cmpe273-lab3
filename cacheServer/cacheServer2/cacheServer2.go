@@ -27,7 +27,7 @@ import (
    route1.GET("/keys/:key_id", GetHandler1)
    route1.GET("/keys", GetAllHandler1)
    server1 := http.Server{
-     Addr: "localhost:3000",
+     Addr: "localhost:3001",
      Handler: route1,
    }
    server1.ListenAndServe()
